@@ -4,19 +4,24 @@
     border: none;
 }
 body {
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
   grid-template-areas: 
   "header"
   "game-board"
   "footer";
 }
 
+.game-container {
+    grid-area: game-board;
+}
+
 #small-grid {
     width: 50%;
     border:5px solid black ;
-    grid-area: game-board;
+    
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr 1fr;
