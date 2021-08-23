@@ -1,3 +1,25 @@
+document.addEventListener("dOMcontentLoaded", function() {
+   let button = document.getElementsByTagName("button")
+
+   for (let button of buttons) {
+      button.addEventListener(click, function(){
+         if (this.getAttribute("data-type") === "easy") {
+            let GameDif = this.getAttribute("data-type");
+            runGame();
+         }
+      })
+   }
+});
+
+function runGame(gameDif) {
+   
+}
+
+
+/**
+ * creates large game board.
+ */
+
 let board = document.getElementById("board");
 let newDiv = `<div id="small-grid"></div>`;
 board.innerHTML = newDiv;
