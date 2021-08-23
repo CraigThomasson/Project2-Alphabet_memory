@@ -16,10 +16,10 @@ body {
 
 .game-container {
     grid-area: game-board;
+    margin: auto;
 }
 
 #small-grid {
-    width: 50%;
     border:5px solid black ;
     
     display: grid;
